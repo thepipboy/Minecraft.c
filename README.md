@@ -5,7 +5,7 @@ Inspiration from (sudo pip install && clear UI in Fallout Game)
 
     a truly infinite game generator 
 
-    some useful and random elemnt 
+    some useful and random element 
 
 normal person can use 30 RMB(sometimes 75% discount = 22.5) to purchase a VIP in a month (the minimal price U can pay)
 
