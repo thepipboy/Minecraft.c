@@ -16,3 +16,6 @@ elegant char name and neat system should include fancy UI and euphonious music
 
 We Provide the entire independent preview permission for users(VIP or SVIP) to use pipboyOS
     
+     Unfinished Project
+
+     U all know,I am telling a joke
