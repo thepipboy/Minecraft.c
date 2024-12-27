@@ -19,3 +19,5 @@ We Provide the entire independent preview permission for users(VIP or SVIP) to u
      Unfinished Project
 
      U all know,I am telling a joke
+
+     sudo pip install && clear UI in Fallout Game
