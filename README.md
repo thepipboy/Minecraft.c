@@ -21,5 +21,3 @@ We Provide the entire independent preview permission for users(VIP or SVIP) to u
      U all know,I am telling a joke
 
      sudo pip install && clear UI in Fallout Game
-
-The Real Deepseek 5 20 Element Model original
