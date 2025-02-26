@@ -12,7 +12,7 @@ normal person can use 30 RMB(sometimes 75% discount = 22.5) to purchase a VIP in
 elegant char name and neat system should include fancy UI and euphonious music 
 
     to become a forever or sustain user, 
-    U can subscribe the SVIP custom project(150 RMB)
+    U can subscribe the SVIP custom project(100 RMB)
 
 We Provide the entire independent preview permission for users(VIP or SVIP) to use pipboyOS
     
