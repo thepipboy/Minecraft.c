@@ -99,7 +99,6 @@ int vertices(){
           ] 
 }
 
-
 double Coordinate(X, Y, Z, NULL)
 {
     Null = 1 / n
@@ -116,7 +115,8 @@ double coordinate(x, y, z , zero){
     return [ dx, dy, dz , dx - N, dy - N, dz - N ]
     }
 signed Surface(){
-       Edges = 1
+       const Edges = 1
+
        const Tetrahedron = 8 * sqrt(3) / 3 * [Edges]
      
        const Hexhedron = 8 * [Edges]
@@ -128,7 +128,8 @@ signed Surface(){
        const Icosahedron = [30 * sqrt(3) - 10 * sqrt(15)] * [Edges]
 ;}
 unsigned Volume(){
-       const Radius = 1;
+       const Radius = 1
+
        const Tetrahedron = 8 * sqrt(3) * [Radius]/27
 
        const Hexhedron = 8 * sqrt(3) * [Radius]/9
@@ -192,6 +193,6 @@ int five(){
                     {n+3, n+18, n+25, n+22, n+11},
                     {n+4, n+19, n+20, n+21, n+10},
                     {n+5, n+6, n+7, n+8, n+9}}
-        return   [0,-4,-9,-15] 
+        return      [0,-4,-9,-15] 
 }
 }
