@@ -80,11 +80,11 @@ void  N(){
             return [1,2,3,4,5,6,7,8,9]
         
     Big.N(n){
-        for Big.Z{n, 0, 0, 0, n},
-                          {n, n, 0, 0, n},
-                          {n, 0, n, 0, n},
-                          {n, 0, 0, n, n},
-                          {n, 0, 0, 0, n}}
+        for Big.Z{{n, 0, 0, 0, n},
+                  {n, n, 0, 0, n},
+                  {n, 0, n, 0, n},
+                  {n, 0, 0, n, n},
+                  {n, 0, 0, 0, n}}
             return [1,2,3,4,5,6,7,8,9]
     }
 
@@ -99,7 +99,8 @@ int vertices(){
           ] 
 }
 
-double Coordinate(X, Y, Z, NULL)
+
+double Coordinate(X, Y, Z, Null)
 {
     Null = 1 / n
     dx = X * N
@@ -107,7 +108,7 @@ double Coordinate(X, Y, Z, NULL)
     dz = Z * N
     return [ dx, dy, dz , dx + N, dy + N, dz + N ]
     }
-double coordinate(x, y, z , zero){
+double coordinate(x, y, z , Zero){
     Zero = 2 / n
     dx = x % N
     dy = y % N
@@ -116,7 +117,6 @@ double coordinate(x, y, z , zero){
     }
 signed Surface(){
        const Edges = 1
-
        const Tetrahedron = 8 * sqrt(3) / 3 * [Edges]
      
        const Hexhedron = 8 * [Edges]
@@ -128,8 +128,7 @@ signed Surface(){
        const Icosahedron = [30 * sqrt(3) - 10 * sqrt(15)] * [Edges]
 ;}
 unsigned Volume(){
-       const Radius = 1
-
+       const Radius = 1;
        const Tetrahedron = 8 * sqrt(3) * [Radius]/27
 
        const Hexhedron = 8 * sqrt(3) * [Radius]/9
@@ -147,16 +146,16 @@ auto union(){
     char d = "00001110",
     char e = "00001111",
     char f = "00010000",
-     return [
-     a * sin(x + n) + b * cos(x - n) + c * sin(y + n) + d * cos(y - n) + e * sin(z + n) + f * cos(z - n),           
-     a * asin(x + n) + b * acos(x - n) + c * asin(y + n) + d * acos(y - n) + e * asin(z + n) + f * acos(z - n), 
-           
-     a * sinh(x + n) + b * cosh(x - n) + c * sinh(y + n) + d * cosh(y - n) + e * sinh(z + n) + f * cos(z - n),        
-     a * asinh(x + n) + b * acosh(x - n) + c * asinh(y + n) + d * acosh(y - n) + e * asinh(z + n) + f * acosh(z - n),  
-           
-     a * tan(x + n) + b * atan(x - n) + c * tan(y + n) + d * atan(y - n) + e * tan(z + n) + f * atan(z - n),
-     a * exp(x + n) + b * log(x - n) + c * exp(y + n) + d * log(y - n) + e * exp(z + n) + f * log(z - n), 
-            ]
+     return    [
+        a * sin(x + n) + b * cos(x - n) + c * sin(y + n) + d * cos(y - n) + e * sin(z + n) + f * cos(z - n),           
+        a * asin(x + n) + b * acos(x - n) + c * asin(y + n) + d * acos(y - n) + e * asin(z + n) + f * acos(z - n), 
+              
+        a * sinh(x + n) + b * cosh(x - n) + c * sinh(y + n) + d * cosh(y - n) + e * sinh(z + n) + f * cos(z - n),        
+        a * asinh(x + n) + b * acosh(x - n) + c * asinh(y + n) + d * acosh(y - n) + e * asinh(z + n) + f * acosh(z - n),  
+              
+        a * tan(x + n) + b * atan(x - n) + c * tan(y + n) + d * atan(y - n) + e * tan(z + n) + f * atan(z - n),
+        a * exp(x + n) + b * log(x - n) + c * exp(y + n) + d * log(y - n) + e * exp(z + n) + f * log(z - n), 
+         ]
 }
 int three(){
     for onenine {[n-4, n-3, n-2],
@@ -195,6 +194,6 @@ int five(){
                     {n+3, n+18, n+25, n+22, n+11},
                     {n+4, n+19, n+20, n+21, n+10},
                     {n+5, n+6, n+7, n+8, n+9}}
-        return      [0,-4,-9,-15] 
+        return [0,-4,-9,-15] 
 }
 }
