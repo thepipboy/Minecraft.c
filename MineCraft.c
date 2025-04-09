@@ -1,11 +1,12 @@
 #include "math.h"
+void MC(){
 short XYZ(small,middle,big,n){
     int small = 3;
     int middle = 4;
     int big = 5;
-    small.X = for{{n, 0, n},
-                  {0, n, 0},
-                  {n, 0, n}}
+    small.X = for{{n,0,n},
+                  {0,n,0},
+                  {n,0,n}}
     return [1,2,3,4,5,6,7,8,9]
     
     middle.X = for{{n,0,0,n},
@@ -57,29 +58,41 @@ short XYZ(small,middle,big,n){
                 {n,n,n,n,n}}
     return [1,2,3,4,5,6,7,8,9]    
 }
+
 int vertices(x, y, z, n){
     return [
-        x-n,y+n,z-n, x-n,y+n,z+n, x+n,y+n,z+n, x+n,y+n,z-n;
-        x-n,y-n,z-n, x+n,y-n,z-n, x+n,y-n,z+n, x-n,y-n,z+n;  
-        x-n,y-n,z-n, x-n,y-n,z+n, x-n,y+n,z+n, x-n,y+n,z-n;  
-        x+n,y-n,z+n, x+n,y-n,z-n, x+n,y+n,z-n, x+n,y+n,z+n;  
-        x-n,y-n,z+n, x+n,y-n,z+n, x+n,y+n,z+n, x-n,y+n,z+n; 
-        x+n,y-n,z-n, x-n,y-n,z-n, x-n,y+n,z-n, x+n,y+n,z-n;  
+        x-n,y+n,z-n, x-n,y+n,z+n, x+n,y+n,z+n, x+n,y+n,z-n; #a
+        x-n,y-n,z-n, x+n,y-n,z-n, x+n,y-n,z+n, x-n,y-n,z+n; #b
+        x-n,y-n,z-n, x-n,y-n,z+n, x-n,y+n,z+n, x-n,y+n,z-n; #c
+        x+n,y-n,z+n, x+n,y-n,z-n, x+n,y+n,z-n, x+n,y+n,z+n; #d
+        x-n,y-n,z+n, x+n,y-n,z+n, x+n,y+n,z+n, x-n,y+n,z+n; #e
+        x+n,y-n,z-n, x-n,y-n,z-n, x-n,y+n,z-n, x+n,y+n,z-n; #f
         ]
 }
-float sphere(x , y , z , r):
-    return [r^2 = x^2 + y^2 + z^2]
-    
-double coordinate(x, y, z , n):
+typedef struct {
+float sphere(x , y , z , r){
+    return [r^2 === x^2 + y^2 + z^2]
+        }
+double +coordinate(x, y, z , N):
     N = 1 / n
     dx = x * N
     dy = y * N
     dz = z * N
     return [ dx, dy, dz , dx + N, dy + N, dz + N ]
-    
+    }
+double -coordinate(x, y, z , N){
+    N = 2 / n
+    dx = x % N
+    dy = y % N
+    dz = z % N
+    return [ dx, dy, dz , dx - N, dy - N, dz - N ]
+    } 
+}
 signed edge(){
     
 }
 unsigned face(){
     
+}
+return [vertice - edge + face = 2]
 }
