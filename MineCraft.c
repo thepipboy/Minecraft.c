@@ -65,22 +65,20 @@ void Z(){
                 {n,n,n,n,n}}
     return [1,2,3,4,5,6,7,8,9]    
  
-void  N(){ 
+void N(){ 
     small.N =
         for{{n, 0, n},
             {n, n, n},
             {n, 0, n}}
             return [1,2,3,4,5,6,7,8,9]
           
-    middle.N =
-        for middle.Z{{n, 0, 0, n},
+    middle.N = for  {{n, 0, 0, n},
                      {n, n, 0, n},
                      {n, 0, n, n},
                      {n, 0, 0, n}}
             return [1,2,3,4,5,6,7,8,9]
         
-    big.N =
-        for Big.Z{{n, 0, 0, 0, n},
+    big.N =  for {{n, 0, 0, 0, n},
                   {n, n, 0, 0, n},
                   {n, 0, n, 0, n},
                   {n, 0, 0, n, n},
