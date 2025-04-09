@@ -1,4 +1,4 @@
-#include "h"
+#include "math.h"
 void MC(){
 short XYZ(small,middle,big,n){
     int small = 3;
@@ -88,11 +88,29 @@ double -coordinate(x, y, z , N){
     return [ dx, dy, dz , dx - N, dy - N, dz - N ]
     } 
 }
-signed edge(){
+signed Surface(){
+       this.Edges = 1
+       const Tetrahedron = 8 * math.sqrt(3) / 3 * [Edges]
+     
+       const Hexhedron = 8 * [Edges]
     
+       const Octahedron = 4 * math.sqrt(3) * [Edges]
+    
+       const Dodecahedron = 3 * math.sqrt(25 + 10 * math.sqrt(5)) * [Edges]
+    
+       const Icosahedron = [30 * math.sqrt(3) - 10 * math.sqrt(15)] * [Edges]
 }
-unsigned face(){
-    
+unsinged Volume(){
+       this.Radius = 1
+       const Tetrahedron = 8 * math.sqrt(3) * [Radius]/27
+
+       const Hexhedron = 8 * math.sqrt(3) * [Radius]/9
+
+       const Octahedron = (4/3) * [Radius]
+
+       const Dodecahedron = [15 + 7 * math.sqrt(5)]/4 * [Radius]
+
+       const Tetrahedron = math.sqrt[25 + 10 * math.sqrt(5)]/4 * [Radius]
 }
   char a = "00001011",
   char b = "00001100",
