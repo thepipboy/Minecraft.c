@@ -72,14 +72,14 @@ void  N(){
             {n, 0, n}}
             return [1,2,3,4,5,6,7,8,9]
           
-    Middle.N =
+    middle.N =
         for middle.Z{{n, 0, 0, n},
                      {n, n, 0, n},
                      {n, 0, n, n},
                      {n, 0, 0, n}}
             return [1,2,3,4,5,6,7,8,9]
         
-    Big.N =
+    big.N =
         for Big.Z{{n, 0, 0, 0, n},
                   {n, n, 0, 0, n},
                   {n, 0, n, 0, n},
@@ -97,26 +97,9 @@ int vertices(){
         x-n,y-n,z+n, x+n,y-n,z+n, x+n,y+n,z+n, x-n,y+n,z+n, 
         x+n,y-n,z-n, x-n,y-n,z-n, x-n,y+n,z-n, x+n,y+n,z-n,
           ] 
-}
-
-
-double Coordinate(X, Y, Z, Null)
-{
-    Null = 1 / n
-    dx = X * N
-    dy = Y * N
-    dz = Z * N
-    return [ dx, dy, dz , dx + N, dy + N, dz + N ]
-    }
-double coordinate(x, y, z , Zero){
-    Zero = 2 / n
-    dx = x % N
-    dy = y % N
-    dz = z % N
-    return [ dx, dy, dz , dx - N, dy - N, dz - N ]
-    }
+;}
 signed Surface(){
-       const Edges = 1
+       const Edges = 1;
        const Tetrahedron = 8 * sqrt(3) / 3 * [Edges]
      
        const Hexhedron = 8 * [Edges]
@@ -158,16 +141,16 @@ auto union(){
          ]
 }
 int three(){
-    for onenine {[n-4, n-3, n-2],
-               [n-1, n ,  n+1],
-               [n+2, n+3, n+4]}
+    for onenine {{n-4, n-3, n-2},
+                 {n-1, n ,  n+1},
+                 {n+2, n+3, n+4}}
         return [5,6,7,8,9,10,11,12,13]
     
-    for nineone {n+4, n+3, n+2},
+    for nineone {n-4, n+3, n+2},
                 {n+1, n , n-1},
-                {n-2, n-3, n-4}}
-        return [5,4,3,2,1,-1,-2,-3,-4]
-        }
+                {n-2, n-3, n+4}}
+        return [13,12,11,10,9,8,7,6,5]
+}
 int four(){
     for inner {{n+1, n+1, n+1, n+1},
                {n+1,  n,  n, n+1},
@@ -196,4 +179,5 @@ int five(){
                     {n+5, n+6, n+7, n+8, n+9}}
         return [0,-4,-9,-15] 
 }
+return [ 3 ^ 2 + 4 ^ 2 = 5 ^ 2 ]
 }
