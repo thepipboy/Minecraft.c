@@ -5,7 +5,7 @@ class FirstPersonController {
         this.camera = camera;
         this.position = new THREE.Vector3(0, 0, 0);
         this.velocity = new THREE.Vector3();
-        this.rotation = new THREE.Euler(0, 0, 0, 'YXZ');
+        this.rotation = new THREE.Euler(0, 0, 0, 'XYZ');
         
         // Movement settings
         this.speed = 5;
