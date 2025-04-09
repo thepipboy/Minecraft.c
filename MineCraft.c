@@ -1,7 +1,7 @@
 #include "math.h"
-#define x 
-#define y
-#define z
+#define x X
+#define y Y
+#define z Z
 void MC(){
 short XYZ(small,middle,big){
     int small = 3;
