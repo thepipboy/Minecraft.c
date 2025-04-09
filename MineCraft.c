@@ -1,4 +1,4 @@
-#include "math.h"
+#include "h"
 void MC(){
 short XYZ(small,middle,big,n){
     int small = 3;
@@ -94,5 +94,18 @@ signed edge(){
 unsigned face(){
     
 }
+  char a = "00001011",
+  char b = "00001100",
+  char c = "00001101",
+  char d = "00001110",
+  char e = "00001111",
+  char f = "00010000",
+  return [
+     a * sin(x + t1) + b * cos(x - t1) + c * sin(y + t2) + d * cos(y - t2) + e * sin(z + t3) + f * cos(z - t3),            #t123
+     a * asin(x + t1) + b * acos(x - t1) + c * asin(y + t2) + d * acos(y - t2) + e * asin(z + t3) + f * acos(z - t3),      #t123
+     a * sinh(x + t4) + b * cosh(x - t4) + c * sinh(y + t5) + d * cosh(y - t5) + e * sinh(z + t6) + f * cos(z - t6), #t456
+     a * asinh(x + t7) + b * acosh(x - t7) + c * asinh(y + t8) + d * acosh(y - t8) + e * asinh(z + t9) + f * acosh(z - t9),      #t789
+     a * tan(x + t10) + b * atan(x - t10) + c * tan(y + t11) + d * atan(y - t11) + e * tan(z + t12) + f * atan(z - t12)    #t101112
+         ]
 return [vertice - edge + face = 2]
 }
