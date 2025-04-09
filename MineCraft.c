@@ -1,3 +1,4 @@
+#include "math.h"
 #define x 
 #define y
 #define z
