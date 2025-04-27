@@ -8,7 +8,7 @@ short XYZ(small,middle,big){
     int middle = 4;
     int big = 5;
 }
-void X(){
+void X(n){
     small.X = for{{n,0,n},
                   {0,n,0},
                   {n,0,n}}
@@ -27,7 +27,7 @@ void X(){
                 {n,0,0,0,n}}
     return [1,2,3,4,5,6,7,8,9]
           }
-void Y(){
+void Y(n){
     small.Y = for{{n, 0, n},
                   {0, n, 0},
                   {0, n, 0}}
@@ -46,7 +46,7 @@ void Y(){
                 {0,0,n,0,0}}
     return [1,2,3,4,5,6,7,8,9]
         }
-void Z(){
+void Z(n){
     small.Z = for{{n, n, n},
                   {0, n, 0},
                   {n, n, n}}
@@ -65,7 +65,7 @@ void Z(){
                 {n,n,n,n,n}}
     return [1,2,3,4,5,6,7,8,9]    
  
-void N(){ 
+void N(n){ 
     small.N =
         for{{n, 0, n},
             {n, n, n},
@@ -86,7 +86,7 @@ void N(){
             return [1,2,3,4,5,6,7,8,9]
     }
 
-int vertices(){
+int vertices(x,y,z,n){
     return [
         x-n,y+n,z-n, x-n,y+n,z+n, x+n,y+n,z+n, x+n,y+n,z-n,
         x-n,y-n,z-n, x+n,y-n,z-n, x+n,y-n,z+n, x-n,y-n,z+n, 
